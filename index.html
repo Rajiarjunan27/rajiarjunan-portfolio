@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,11 +9,11 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       scroll-behavior: smooth;
-      background-color: #f8f9fa;
+      background-color: #fdf6f0;
     }
     .header {
-      background: linear-gradient(to right, #0d6efd, #6c757d);
-      color: white;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      color: #333;
       padding: 3rem 1rem;
       text-align: center;
       animation: fadeInDown 1s ease-out;
@@ -26,13 +25,14 @@
       border-radius: 50%;
       border: 4px solid #fff;
       margin-top: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
     @keyframes fadeInDown {
       from { opacity: 0; transform: translateY(-20px); }
       to { opacity: 1; transform: translateY(0); }
     }
     .section-title {
-      border-bottom: 2px solid #0d6efd;
+      border-bottom: 2px solid #a1c4fd;
       margin-bottom: 1rem;
       padding-bottom: 0.5rem;
       animation: slideInLeft 0.8s ease;
@@ -41,7 +41,7 @@
       from { opacity: 0; transform: translateX(-30px); }
       to { opacity: 1; transform: translateX(0); }
     }
-    .contact a { color: #0d6efd; text-decoration: none; }
+    .contact a { color: #4a90e2; text-decoration: none; }
     .contact a:hover { text-decoration: underline; }
     .fade-in {
       animation: fadeIn 1.2s ease-in;
@@ -50,83 +50,59 @@
       from { opacity: 0; }
       to { opacity: 1; }
     }
+    .btn-download {
+      margin-top: 10px;
+      background-color: #c2e9fb;
+      color: #333;
+    }
   </style>
 </head>
-<body>
-
-  <header class="header">
+<body>  <header class="header">
     <img src="profile.jpg" alt="Profile Photo" class="profile-pic" />
     <h1 class="display-5 mt-3">Rajeshwari A</h1>
     <p class="lead">Software Engineer</p>
-  </header>
-
-  <div class="container py-4 fade-in">
+    <a href="resume.pdf" class="btn btn-sm btn-download" download>Download Resume</a>
+  </header>  <div class="container py-4 fade-in">
     <section>
-      <h2 class="section-title">Profile</h2>
-      <p>Results-driven professional with 4+ years of experience in IT and education. Skilled in frontend and backend technologies including HTML, CSS, Python, Node.js, Django, and React. Passionate about building user-centric web applications.</p>
-    </section>
+      <h2 class="section-title">About Me</h2>
+      <p>I am Rajeshwari, a passionate software engineer with 4+ years of experience in IT and education sectors. I love designing responsive user experiences, solving backend problems, and building full-stack applications using modern tools. I’m currently seeking opportunities to apply my skills and grow further in the tech industry.</p>
+    </section><section>
+  <h2 class="section-title">Projects</h2>
+  <ul>
+    <li><strong>Student Management System</strong> – Built using Django and MySQL with full CRUD operations and responsive UI.</li>
+    <li><strong>IoT Vehicle Tracker</strong> – Developed a cloud-connected GPS tracker and visualized data in Power BI.</li>
+    <li><strong>Poisonous Gas Detection System</strong> – Developed a system using gas sensors to detect various harmful gases in real time. Each detection triggers a status notification (safe/unsafe). Huge volumes of raw data were processed and visualized in Power BI for a client in the oil manufacturing industry.</li>
+    <li><strong>Portfolio Website</strong> – This responsive site, built using HTML/CSS/Bootstrap and deployed on GitHub Pages.</li>
+  </ul>
+</section>
 
-    <section>
-      <h2 class="section-title">Work Experience</h2>
-      <div class="mb-3">
-        <h5>Python Full Stack Developer Intern – Inmakes Infotech (Mar 2024 – Sep 2024)</h5>
-        <ul>
-          <li>Created wireframes and prototypes in Figma to match client requirements.</li>
-          <li>Built responsive UIs using HTML, CSS, Bootstrap, and Django.</li>
-          <li>Managed backend logic and SQL data handling using Python.</li>
-        </ul>
-      </div>
-      <div class="mb-3">
-        <h5>Assistant Professor – PSN Institute (2021 – 2024)</h5>
-        <ul>
-          <li>Delivered lectures and mentored undergraduate students.</li>
-          <li>Designed and implemented course materials and assessments.</li>
-        </ul>
-      </div>
-      <div class="mb-3">
-        <h5>Software Engineer – Teezle Telematics (2018 – 2019)</h5>
-        <ul>
-          <li>Developed cloud solutions using AWS (EC2, S3, Redis).</li>
-          <li>Created cloud infrastructure with Terraform (IaC).</li>
-          <li>Built data dashboards using PowerBI and managed SQL databases.</li>
-        </ul>
-      </div>
-      <div>
-        <h5>Maternity Career Break (Sep 2024 – Present)</h5>
-        <p>I took a planned career break and am now ready to rejoin the workforce.</p>
-      </div>
-    </section>
+<section>
+  <h2 class="section-title">Skills & Tools</h2>
+  <p><strong>Frontend:</strong> HTML, CSS, Bootstrap</p>
+  <p><strong>Backend:</strong> Python, Node.js</p>
+  <p><strong>Frameworks:</strong> Django</p>
+  <p><strong>Database:</strong> MySQL, MongoDB</p>
+  <p><strong>Other Tools:</strong> Git, Terraform, PowerBI, PyCharm</p>
+</section>
 
-    <section>
-      <h2 class="section-title">Skills & Tools</h2>
-      <p><strong>Frontend:</strong> HTML, CSS, Bootstrap</p>
-      <p><strong>Backend:</strong> Python, Node.js</p>
-      <p><strong>Frameworks:</strong> Django</p>
-      <p><strong>Database:</strong> MySQL, MongoDB</p>
-      <p><strong>Other Tools:</strong> Git, Terraform, PowerBI, PyCharm</p>
-    </section>
+<section>
+  <h2 class="section-title">Education</h2>
+  <p><strong>ME (CS)</strong> – Francis Xavier Engineering College, 2021 – 9.4 CGPA</p>
+  <p><strong>BE (ECE)</strong> – Einstein College of Engineering, 2018 – 8.1 CGPA</p>
+</section>
 
-    <section>
-      <h2 class="section-title">Education</h2>
-      <p><strong>ME (CS)</strong> – Francis Xavier Engineering College, 2021 – 9.4 CGPA</p>
-      <p><strong>BE (ECE)</strong> – Einstein College of Engineering, 2018 – 8.1 CGPA</p>
-    </section>
-
-    <section>
-      <h2 class="section-title">Contact</h2>
-      <div class="contact">
-        <p><i class="fas fa-phone"></i> <a href="tel:+919677788760">+91 96777 88760</a></p>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:rajiarjunan949@gmail.com">rajiarjunan949@gmail.com</a></p>
-        <p><i class="fab fa-github"></i> <a href="https://github.com/Rajiarjunan27" target="_blank">github.com/Rajiarjunan27</a></p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/rajiarjunan" target="_blank">linkedin.com/in/rajiarjunan</a></p>
-        <p><i class="fas fa-map-marker-alt"></i> Chennai, India</p>
-      </div>
-    </section>
+<section>
+  <h2 class="section-title">Contact</h2>
+  <div class="contact">
+    <p><i class="fas fa-phone"></i> <a href="tel:+919677788760">+91 96777 88760</a></p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:rajiarjunan949@gmail.com">rajiarjunan949@gmail.com</a></p>
+    <p><i class="fab fa-github"></i> <a href="https://github.com/Rajiarjunan27" target="_blank">github.com/Rajiarjunan27</a></p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/rajiarjunan" target="_blank">linkedin.com/in/rajiarjunan</a></p>
+    <p><i class="fas fa-map-marker-alt"></i> Chennai, India</p>
   </div>
+</section>
 
-  <footer class="text-center py-3 text-muted">
+  </div>  <footer class="text-center py-3 text-muted">
     &copy; 2025 Rajeshwari A
-  </footer>
-
-</body>
+  </footer></body>
 </html>
